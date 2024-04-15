@@ -1,19 +1,19 @@
 /******************************************************************************
-* VersionOwner (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
+* 版权所有 (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
 *
-* FileName：pub.h
-* FileIdentifier：None
-* Abstract ：本文件为嵌入式系统软件公共定义。
-* Other Description：
-* Current Version：V1.00
-* Author：      
-* Completed Date：2013年7月24日
+* 文件名称：pub.h
+* 文件标识：无
+* 内容摘要：本文件为嵌入式系统软件公共定义。
+* 其他说明：
+* 当前版本：V1.00
+* 作    者：      
+* 完成日期：2013年7月24日
 *    
-* Modified History1：
-*        Modified Date：2013年7月24日
-*        Version Number：V1.00
-*        Modified Person：      
-*        Modified part：Add new public definition.
+* 修改记录1：
+*        修改日期：2013年7月24日
+*        版 本 号：V1.00
+*        修 改 人：      
+*        修改内容：新增公共定义.
 ******************************************************************************/
 
 
@@ -27,34 +27,7 @@ extern "C" {
 
 
 
-/************************* 产品代码定义 **********************************/
-#define TS_PRODUCT_LINE_ENERGY           (0x01)  /* 能源管理 */
-#define TS_PRODUCT_LINE_SMT_CTRL         (0x02)  /* 智能控制 */
     
-#define TS_ENERGY_NTS_130                (TS_PRODUCT_LINE_ENERGY + 1)        /* NTS-130      */
-#define TS_ENERGY_NTS_230                (TS_PRODUCT_LINE_ENERGY + 2)        /* NTS-230      */
-#define TS_ENERGY_NTS_210                (TS_PRODUCT_LINE_ENERGY + 3)        /* NTS-210      */
-#define TS_ENERGY_NTS_220GS              (TS_PRODUCT_LINE_ENERGY + 4)        /* NTS-220GS0   */
-#define TS_ENERGY_NTS_240GS              (TS_PRODUCT_LINE_ENERGY + 5)        /* NTS-240GS    */
-#define TS_ENERGY_NTS_240                (TS_PRODUCT_LINE_ENERGY + 6)        /* NTS-240      */
-#define TS_ENERGY_NTS_242_OLD            (TS_PRODUCT_LINE_ENERGY + 7)        /* NTS-242-old  */
-#define TS_ENERGY_NTS_500                (TS_PRODUCT_LINE_ENERGY + 8)        /* NTS-500      */
-#define TS_ENERGY_NTS_600                (TS_PRODUCT_LINE_ENERGY + 9)        /* NTS-600      */
-#define TS_ENERGY_NTS_700                (TS_PRODUCT_LINE_ENERGY + 10)       /* NTS-700      */
-
-#define TS_CTRL_TSDM_0102A               (TS_PRODUCT_LINE_SMT_CTRL + 1)      /* TSDM_0102A   */
-#define TS_CTRL_TSDM_0316A               (TS_PRODUCT_LINE_SMT_CTRL + 2)      /* TSDM_0316A   */
-#define TS_CTRL_TSSD_0816C               (TS_PRODUCT_LINE_SMT_CTRL + 3)      /* TSSD_0816C   */
-#define TS_CTRL_TSSD_0416C               (TS_PRODUCT_LINE_SMT_CTRL + 4)      /* TSSD_0416C   */
-#define TS_CTRL_TSFC_0102A               (TS_PRODUCT_LINE_SMT_CTRL + 5)      /* TSFC_0102A   */
-#define TS_CTRL_TSPS_0102                (TS_PRODUCT_LINE_SMT_CTRL + 6)      /* TSPS_0102    */
-#define TS_CTRL_TSBC_01                  (TS_PRODUCT_LINE_SMT_CTRL + 7)      /* TSBC_01      */
-#define TS_CTRL_TSBC_02                  (TS_PRODUCT_LINE_SMT_CTRL + 8)      /* TSBC_02      */
-#define TS_CTRL_TSLC_A                   (TS_PRODUCT_LINE_SMT_CTRL + 9)      /* TSLC_A       */
-#define TS_CTRL_TSCD_0401A               (TS_PRODUCT_LINE_SMT_CTRL + 10)     /* TSCD_0401A   */
-#define TS_CTRL_TSPS_0102EO1             (TS_PRODUCT_LINE_SMT_CTRL + 11)     /* TSPS_0102EO1 */
-#define TS_CTRL_TSSU_1202                (TS_PRODUCT_LINE_SMT_CTRL + 12)     /* TSSU_1202    */
-
 /****************************** 应用类型定义 *************************************************/
 #define SW_APP_KNX             (0x01)        /* KNX应用    */
 #define SW_APP_KNX_IP          (0x02)        /* KNX IP     */
@@ -65,7 +38,7 @@ extern "C" {
 
 /****************************** 软件框架层定义 ***********************************************/
 #define SW_INTERFACE_LAYER_NUM (0x06)        /* 接口层总数，后续增加新接口层，需要更改次定义。*/
-#define SW_NA_INTERFACE        (0x00)        /* None用层     */
+#define SW_NA_INTERFACE        (0x00)        /* 无用层     */
 #define SW_SAVE_INTERFACE      (0x01)        /* 存储层     */
 #define SW_COMM_INTERFACE      (0x02)        /* 通讯层     */
 #define SW_MATH_INTERFACE      (0x03)        /* 运算层     */

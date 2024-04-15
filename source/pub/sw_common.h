@@ -1,19 +1,19 @@
 /******************************************************************************
-* VersionOwner (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
+* 版权所有 (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
 *
-* FileName：sw_common.h
-* FileIdentifier：None
-* Abstract ：本文件为嵌入式系统软件驱动、接口相关公共定义。
-* Other Description：
-* Current Version：V1.00
-* Author：      
-* Completed Date：2013年7月24日
+* 文件名称：sw_common.h
+* 文件标识：无
+* 内容摘要：本文件为嵌入式系统软件驱动、接口相关公共定义。
+* 其他说明：
+* 当前版本：V1.00
+* 作    者：      
+* 完成日期：2013年7月24日
 *    
-* Modified History1：
-*        Modified Date：2013年7月24日
-*        Version Number：V1.00
-*        Modified Person：      
-*        Modified part：Add new public definition.
+* 修改记录1：
+*        修改日期：2013年7月24日
+*        版 本 号：V1.00
+*        修 改 人：      
+*        修改内容：新增公共定义.
 ******************************************************************************/
 
 #include "type_def.h"
@@ -76,14 +76,15 @@ extern "C" {
 #define SW_MEDIA_DEV_RSV            (SW_MEDIA_DEV_BASE + 4)        /* reserve    */
 /* for control app. */
 #define SW_PERIPHERAL_TIMER         (SW_MEDIA_DEV_RSV + 1)         /* TIMER      */
+#define SW_PERIPHERAL_CY8           (SW_PERIPHERAL_TIMER + 1)      /* cy8cmbr31xx*/
 /* for display app. */
-#define SW_PERIPHERAL_DISP          (SW_MEDIA_DEV_RSV + 2)         /* display    */
+#define SW_PERIPHERAL_DISP          (SW_PERIPHERAL_CY8 + 1)        /* display    */
 /* for DMA driver */
-#define SW_PERIPHERAL_DMA           (SW_MEDIA_DEV_RSV + 3)         /* DMA        */
+#define SW_PERIPHERAL_DMA           (SW_PERIPHERAL_DISP + 1)       /* DMA        */
 /* for math app. */
-#define SW_MATH_DEV_BASE            (SW_MEDIA_DEV_RSV + 4)
+#define SW_MATH_DEV_BASE            (SW_PERIPHERAL_DMA + 1)
 #define SW_PERIPHERAL_CAL_IC        (SW_MATH_DEV_BASE)             /* 计量芯片   */
-#define SW_PERIPHERAL_AD            (SW_MATH_DEV_BASE + 1)         /* AD         */
+#define SW_PERIPHERAL_AD            (SW_PERIPHERAL_CAL_IC + 1)     /* AD         */
 
 /* Get high byte or low byte from a WORD. */
 #define GET_HIBYTE(wWord)           ((BYTE)(((wWord)>>8)&0x00FF))
@@ -115,7 +116,7 @@ extern "C" {
 /**********************通用性定义******************************************/
 #define SW_DEV_START                  (1)          /* 设备启动      */
 #define SW_DEV_STOP                   (0)          /* 设备停止      */
-#define SW_NONE_MEANING               (0xff)       /* None意义数据    */
+#define SW_NONE_MEANING               (0xff)       /* 无意义数据    */
 #define SW_DMA_ENABLE                 (1)          /* DMA功能启用   */
 #define SW_DMA_DISABLE                (0)          /* DMA功能关闭   */
 #define SW_MASTER_DEVICE              (1)          /* 设备主机      */
@@ -135,7 +136,7 @@ extern "C" {
 *           
 *   参数：  具体定义见各个具体驱动定义；
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct
@@ -155,7 +156,7 @@ typedef struct
 *           文件中，描述清楚每个参数的具体定义。
 *   参数：  具体定义见各个具体驱动定义；
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct
@@ -175,7 +176,7 @@ typedef struct
 *           
 *   参数：  具体定义见各个具体驱动定义；
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct
@@ -231,7 +232,7 @@ typedef struct
 *   参数：  
             BYTE *pucNext : next buffer's address.
             BYTE ucPoolId : buffer's pool ID.
-*   Modified History：
+*   修改记录：
 *   2013-7-24         新增结构；
 ********************************************************************/
 #pragma pack(1)
@@ -300,7 +301,7 @@ typedef BOOL   (*APP_ADC_HANDLER)(BYTE ucDevNo,BYTE ucChnl,BYTE ucCunt,WORD16 *w
             pfDrvInit： 驱动初始化接口
             pfDrvCtrl： 驱动控制和配置接口
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct 
@@ -322,7 +323,7 @@ typedef struct
             ucDevNo   ：设备物理号
             ptDevOp   ：设备驱动操作接口
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct
@@ -345,7 +346,7 @@ typedef struct
             ucDevNo   ：设备物理号,从0开始
             ptDevOp   ：设备注册接口
 *   作者：        
-*   Modified History：
+*   修改记录：
 *   2013-7-24          新增结构；
 ****************************************************/
 typedef struct

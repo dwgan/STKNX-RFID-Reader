@@ -1,19 +1,19 @@
 /******************************************************************************
-* VersionOwner (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
+* 版权所有 (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
 *
-* FileName：type_def.h
-* FileIdentifier：None
-* Abstract ：本文件为数据类型统一定义。自开发代码数据类型都以本头文件定义为准。
-* Other Description：
-* Current Version：V1.00
-* Author：      
-* Completed Date：2013年7月24日
+* 文件名称：type_def.h
+* 文件标识：无
+* 内容摘要：本文件为数据类型统一定义。自开发代码数据类型都以本头文件定义为准。
+* 其他说明：
+* 当前版本：V1.00
+* 作    者：      
+* 完成日期：2013年7月24日
 *    
-* Modified History1：
-*        Modified Date：2013年7月24日
-*        Version Number：V1.00
-*        Modified Person：      
-*        Modified part：Add new public definition.
+* 修改记录1：
+*        修改日期：2013年7月24日
+*        版 本 号：V1.00
+*        修 改 人：      
+*        修改内容：新增公共定义.
 ******************************************************************************/
 
 #ifndef _TYPE_DEF_H_

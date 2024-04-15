@@ -1,19 +1,19 @@
 /******************************************************************************
-* VersionOwner (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
+* °æÈ¨ËùÓĞ (C)2013,Nanjing Shufan Information Technology Co.,Ltd.
 *
-* FileName£ºapp_common.h
-* FileIdentifier£ºNone
-* Abstract £º±¾ÎÄ¼şÎªÓ¦ÓÃÏà¹ØµÄÍ·ÎÄ¼ş¶¨Òå¡£
-* Other Description£º
-* Current Version£ºV1.00
-* Author£º      
-* Completed Date£º2013Äê7ÔÂ24ÈÕ
+* ÎÄ¼şÃû³Æ£ºapp_common.h
+* ÎÄ¼ş±êÊ¶£ºÎŞ
+* ÄÚÈİÕªÒª£º±¾ÎÄ¼şÎªÓ¦ÓÃÏà¹ØµÄÍ·ÎÄ¼ş¶¨Òå¡£
+* ÆäËûËµÃ÷£º
+* µ±Ç°°æ±¾£ºV1.00
+* ×÷    Õß£º      
+* Íê³ÉÈÕÆÚ£º2013Äê7ÔÂ24ÈÕ
 *    
-* Modified History1£º
-*        Modified Date£º2013Äê7ÔÂ24ÈÕ
-*        Version Number£ºV1.00
-*        Modified Person£º      
-*        Modified part£ºAdd new public definition.
+* ĞŞ¸Ä¼ÇÂ¼1£º
+*        ĞŞ¸ÄÈÕÆÚ£º2013Äê7ÔÂ24ÈÕ
+*        °æ ±¾ ºÅ£ºV1.00
+*        ĞŞ ¸Ä ÈË£º      
+*        ĞŞ¸ÄÄÚÈİ£ºĞÂÔö¹«¹²¶¨Òå.
 ******************************************************************************/
 
 #ifndef _APP_COMMON_
@@ -27,12 +27,6 @@ extern "C" {
 #define KNX_APP_ON      1                    /* KNX application output ON.     */
 #define KNX_APP_OFF     0                    /* KNX application output OFF.    */
 #define KNX_APP_TOGGLE  2                    /* KNX application output toggle. */
-#define KNX_APP_DIMMINGRSV 3                /*  KNX application output based on Dimming RSV*/
-#define KNX_APP_DIMMINGASV 4                /*  KNX application output based on Dimming ASV*/
-#define KNX_APP_CURTAINOPEN 5
-#define KNX_APP_CURTAINCLOSE 6
-#define KNX_APP_CURTAINSTOP  7
-
 
 
 /* input channel No define,begin with 1, 0 is forbidden  */
@@ -53,7 +47,7 @@ extern "C" {
 #define OUTPUT_CHANNEL_7          7
 
 /* Í¨µÀÊäÈëÊÂ¼ş¶¨Òå£¬²»ÒªĞŞ¸ÄÊÂ¼ş¶¨ÒåÂë¡£ */
-#define INPUT_EVENT_NONE          0x55              /* NoneÊÂ¼ş·¢Éú                        */
+#define INPUT_EVENT_NONE          0x55              /* ÎŞÊÂ¼ş·¢Éú                        */
 #define INPUT_EVENT_0             0x00              /* ¶Ì°´ÊÂ¼ş£¨³¤°´Ê¹ÄÜ£©/¶Ì°´°´ÏÂÊÂ¼ş */
 #define INPUT_EVENT_1             0x01              /* ¶Ì°´ÊÍ·ÅÊÂ¼ş/³¤°´ÊÂ¼ş£¨³¤°´Ê¹ÄÜ£© */
 #define INPUT_EVENT_2             0x02              /* ³¤°´ÊÍ·ÅÊÂ¼ş£¨³¤°´Ê¹ÄÜ£©          */
@@ -85,7 +79,7 @@ extern "C" {
 #define INPUT_PWR_START_BTN_EN              1       /* ÉÏµç°´¼üÊ¹ÄÜ     */
 #define INPUT_PWR_START_BTN_DIS             0       /* ÉÏµç°´¼ü·ÇÄÜ     */
 
-#define INPUT_FUNC_NONE_CMD                 0       /* ÊäÈëÍ¨µÀNone¿ØÖÆÃüÁî   */   
+#define INPUT_FUNC_NONE_CMD                 0       /* ÊäÈëÍ¨µÀÎŞ¿ØÖÆÃüÁî   */   
 #define INPUT_FUNC_ONOFF_CMD                1       /* ÊäÈëÍ¨µÀ¿ª¹Ø¿ØÖÆÃüÁî */    
 #define INPUT_FUNC_DIM_CMD                  2       /* ÊäÈëÍ¨µÀµ÷¹â¿ØÖÆÃüÁî */    
 #define INPUT_FUNC_SHUTTER_CMD              3       /* ÊäÈëÍ¨µÀ´°Á±¿ØÖÆÃüÁî */    
@@ -96,7 +90,7 @@ extern "C" {
 /************ ¿ª¹Ø¹¦ÄÜ²ÎÊı¶¨Òå ******************/
 #define SWITCH_CO_FUNC_EN                   INPUT_CHANNEL_ENABLE    /* Ê¹ÄÜ¿ª¹Ø¹¦ÄÜµÄÍ¨Ñ¶¶ÔÏó¹¦ÄÜ */
 #define SWITCH_CO_FUNC_DISABLE              INPUT_CHANNEL_DISABLE   /* Ê¹ÄÜ¿ª¹Ø¹¦ÄÜµÄÍ¨Ñ¶¶ÔÏó¹¦ÄÜ */
-#define SWITCH_FUNC_NOACTION                0                       /* ¿ª¹Ø¹¦ÄÜNone¶¯×÷             */
+#define SWITCH_FUNC_NOACTION                0                       /* ¿ª¹Ø¹¦ÄÜÎŞ¶¯×÷             */
 #define SWITCH_FUNC_ON                      1                       /* ¿ª¹ØOn¹¦ÄÜ                 */
 #define SWITCH_FUNC_OFF                     2                       /* ¿ª¹ØOff¹¦ÄÜ                */
 #define SWITCH_FUNC_TOGGLE                  3                       /* ¿ª¹ØToggle¹¦ÄÜ             */
@@ -213,7 +207,7 @@ typedef void (*OUTPUT_FUNC)(BYTE ucChnNo, BYTE ucOnOff);  /* ¹Ü½ÅÊä³öº¯ÊıÀàĞÍ¶¨Ò
 * ²ÎÊı£º
     BYTE    ucCoNo;                               Í¨Ñ¶¶ÔÏóºÅ           
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-8        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -239,7 +233,7 @@ typedef struct
                                    INPUT_HOLDING_PRESS_MAX_TIME
     INPUT_CHECK_FUNC fpKeyCheckOp; ÊäÈëÍ¨µÀ¼ì²âº¯Êı
 * ×÷Õß£º        
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6          ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -287,7 +281,7 @@ typedef struct
           WORD16  wEvt1DlyTm        ÊÂ¼ş1ÏÂÍ¨Ñ¶¶ÔÏóµÄ¿ª¹ØÃüÁîÑÓÊ±´¦ÀíÊ±¼äMS
                                     0-65535Ms
 * ×÷Õß£º        
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6          ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -324,7 +318,7 @@ typedef struct
     T_SWITCH_CO_FUNC_PARA  tSwitchCo2Para;          ¿ª¹ØÍ¨Ñ¶¶ÔÏó1µÄ²ÎÊı   
     T_SWITCH_CO_FUNC_PARA  tSwitchCo3Para;          ¿ª¹ØÍ¨Ñ¶¶ÔÏó1µÄ²ÎÊı   
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-4-30        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -352,11 +346,11 @@ typedef struct
 * ²ÎÊı£º
     BYTE   ucCoNo;                                  Í¨Ñ¶¶ÔÏóµÄÍ¨Ñ¶¶ÔÏóºÅÂë
     BYTE   ucDimSwichFunc;                          ¿ª¹ØÑ¡Ïî£¬È¡ÖµÈçÏÂ:
-                                                    DIM_SWITCH_NO_ACTION   None¿ª¹Ø¹¦ÄÜ
+                                                    DIM_SWITCH_NO_ACTION   ÎŞ¿ª¹Ø¹¦ÄÜ
                                                     DIM_SWITCH_ON          ´ò¿ª
                                                     DIM_SWTICH_OFF         ¹Ø±Õ
                                                     DIM_SWITCH_TOGGLE      ½»Ìæ¿ª¹Ø
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -387,7 +381,7 @@ typedef struct
                                                     DIM_STEP_100_0_PERCENT 100.0%²½³¤  
     WORD16 wDimStepPd;                              ²½³¤µ÷¹âÖÜÆÚ£¬È¡Öµ·¶Î§0~65535ms                                                   
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -416,7 +410,7 @@ typedef struct
     T_DIM_SWITCH_CO_FUNC_PARA tSwitchCoPara;          ¿ª¹ØÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı    
     T_DIM_CO_FUNC_PARA        tDimCoPara;             µ÷¹âÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı       
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -449,7 +443,7 @@ typedef struct
                                                 SHUTTER_RELEASE_STOP_DISABLE °´¼üÊÍ·Å²»Í£Ö¹
                                                 SHUTTER_RELEASE_STOP_ENABLE  °´¼üÊÍ·ÅÍ£Ö¹                                               
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -465,7 +459,7 @@ typedef struct
 * ²ÎÊı£º
     BYTE    ucCoNo;                             Í¨Ñ¶¶ÔÏóµÄÍ¨Ñ¶¶ÔÏóºÅÂë                                             
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -492,7 +486,7 @@ typedef struct
     T_POSITION_LIMIT_CO_FUNC_PARA tUpLimitCoPara;         ÉÏÏŞÎ»Í¨Ñ¶¶ÔÏóµÄ²ÎÊı        
     T_POSITION_LIMIT_CO_FUNC_PARA tLowLimitCoPara;        ÏÂÏŞÎ»Í¨Ñ¶¶ÔÏóµÄ²ÎÊı            
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -536,7 +530,7 @@ typedef struct
     WORD16 wEvt0DlyTm;                          EVENT0ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s  
     WORD16 wEvt1DlyTm;                          EVENT1ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s                                    
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -569,7 +563,7 @@ typedef struct
     T_SCENE_CO_FUNC_PARA    tSceneCoPara;           ³¡¾°Í¨Ñ¶¶ÔÏóµÄ²ÎÊı      
          
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -597,7 +591,7 @@ typedef struct
     WORD16 wEvt0DlyTm;                          EVENT0ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s
     WORD16 wEvt1DlyTm;                          EVENT1ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s                                  
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -623,7 +617,7 @@ typedef struct
     WORD16  wEvt0DlyTm;                         EVENT0ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s
     WORD16  wEvt1DlyTm;                         EVENT1ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s                                  
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -666,7 +660,7 @@ typedef struct
     T_2_BYTE_VALUE_CO_FUNC_PARA t1ByteValueCoPara;  1BYTEÊıÖµÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı     
     T_2_BYTE_VALUE_CO_FUNC_PARA t2ByteValueCoPara;  2BYTEÊıÖµÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı              
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -694,19 +688,19 @@ typedef struct
 * ²ÎÊı£º
     BYTE    ucCoNo;                                 Í¨Ñ¶¶ÔÏóµÄÍ¨Ñ¶¶ÔÏóºÅÂë   
     BYTE    ucForcedOp0;                            EVENT0ÏÂÇ¿ÖÆ¹¦ÄÜÑ¡Ïî
-                                                    FORCED_NO_COMMAND                   ÊÂ¼ş0ÏÂNoneÇ¿ÖÆ¹¦ÄÜÃüÁî
+                                                    FORCED_NO_COMMAND                   ÊÂ¼ş0ÏÂÎŞÇ¿ÖÆ¹¦ÄÜÃüÁî
                                                     FORCED_DISABLE_FORCED_OPERATION     ÊÂ¼ş0ÏÂ·¢ËÍÍË³öÇ¿ÖÆ¹¦ÄÜÃüÁî
                                                     FORCED_ENABLE_FORCED_ON_OPERATION   ÊÂ¼ş0ÏÂ·¢ËÍÇ¿ÖÆONÃüÁî
                                                     FORCED_ENABLE_FORCED_OFF_OPERATION  ÊÂ¼ş0ÏÂ·¢ËÍÇ¿ÖÆOFFÃüÁî
     BYTE    ucForcedOp1;                            EVENT1ÏÂÇ¿ÖÆ¹¦ÄÜÑ¡Ïî
-                                                    FORCED_NO_COMMAND                   ÊÂ¼ş1ÏÂNoneÇ¿ÖÆ¹¦ÄÜÃüÁî
+                                                    FORCED_NO_COMMAND                   ÊÂ¼ş1ÏÂÎŞÇ¿ÖÆ¹¦ÄÜÃüÁî
                                                     FORCED_DISABLE_FORCED_OPERATION     ÊÂ¼ş1ÏÂ·¢ËÍÍË³öÇ¿ÖÆ¹¦ÄÜÃüÁî
                                                     FORCED_ENABLE_FORCED_ON_OPERATION   ÊÂ¼ş1ÏÂ·¢ËÍÇ¿ÖÆONÃüÁî
                                                     FORCED_ENABLE_FORCED_OFF_OPERATION  ÊÂ¼ş1ÏÂ·¢ËÍÇ¿ÖÆOFFÃüÁî 
     WORD16 wEvt0DlyTm;                              EVENT0ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s
     WORD16 wEvt1DlyTm;                              EVENT1ÑÓÊ±·¢ËÍÊ±¼ä£¬È¡Öµ·¶Î§ 0~65535s                                  
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -735,7 +729,7 @@ typedef struct
     T_FORCED_CO_FUNC_PARA   tForcedCoPara;          Ç¿ÖÆÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı            
          
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -764,7 +758,7 @@ typedef struct
                                                 GENERAL_PERIODLY_SEND_1  Ñ­»··¢"1"
     WORD16  wInOpPd;                            ¹¤×÷Ö¸Ê¾ÖÜÆÚÉÏ·¢Ê±¼ä£¬È¡Öµ·¶Î§ 1~65535                                
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -783,7 +777,7 @@ typedef struct
                                                 GENERAL_ALL_CONTROL_DISABLE   ²»Ê¹ÄÜÊä³öÈ«¿Ø¹¦ÄÜ
                                                 GENERAL_ALL_CONTROL_ENABLE    Ê¹ÄÜÊä³öÈ«¿Ø¹¦ÄÜ                                        
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -813,7 +807,7 @@ typedef struct
     T_INOPERATION_CO_FUNC_PARA tInOpCoPara;             ¹¤×÷Ö¸Ê¾Í¨Ñ¶¶ÔÏóµÄ²ÎÊı         
          
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -860,7 +854,7 @@ typedef struct
     WORD16  wFlashPeriod;                       Êä³öÉÁË¸ÖÜÆÚ£¬È¡Öµ·¶Î§ 0~65535ms
     WORD16  wFlashCount;                        Êä³öÉÁË¸´ÎÊı£¬È¡Öµ·¶Î§ 0~65535£¬0Îª³ÖĞøÉÁË¸                                
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct
@@ -892,7 +886,7 @@ typedef struct
     OUTPUT_FUNC             fpOutputOp;             Êä³ö²Ù×÷º¯ÊıÖ¸Õë                
     T_OUTPUT_CO_FUNC_PARA   tOutputCoPara;          Êä³öÍ¨Ñ¶¶ÔÏóµÄ²ÎÊı              
 * ×÷Õß£º      
-* Modified History£º
+* ĞŞ¸Ä¼ÇÂ¼£º
 *  2014-7-6        ĞÂÔö½á¹¹£»
 ****************************************************/
 typedef struct

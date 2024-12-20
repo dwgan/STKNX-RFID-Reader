@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1397341173</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\lib\stm32g070cbt6_st_lib_Rx_Pa9_CoTmLimit 20220409 Iar 8.40.2 V 1.04.a</file>
+            <file>$PROJ_DIR$\..\..\source\interface\communication\Knx_protocol_0705_2K_BitChip_Lib\source\Knx_Run.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\stm32g0xx_vector.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\boardctrl.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\communication\Knx_protocol_0705_2K_BitChip_Lib\source\App_Api.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\Main.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\Knx_InternalData.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\Knx_Mem.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\serialProc.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\communication\Knx_protocol_0705_2K_BitChip_Lib\source\KnxProp_0705.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\Application_Data.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\control\source\ctrl_service.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\common_driver\source\mem_malloc.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\media\source\common_media.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\flash\STM32G0XXX\source\Stm32G0XX_Flash.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\systick\Stm32g0XX\source\Stm32g0xx_systick.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\common_driver\source\buffer.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\communication\common\source\comm_service.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\AD\STM32G0XXX\source\Stm32G0xxx_adc.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\uart\STM32G0XXX\source\stm32g0xx_ll_usart.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\common_driver\source\common_driver.c</file>
+            <file>$PROJ_DIR$\..\..\source\products\Sf_DevBrd_G07x\source\Application.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\uart\STM32G0XXX\source\stm32g0xx_ll_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\source\interface\math\source\math_service.c</file>
+            <file>$PROJ_DIR$\..\..\source\drivers\uart\STM32G0XXX\source\stm32g0xx_ll_rcc.c</file>
+            <file>$PROJ_DIR$\..\..\source\application\demo_application\source\demo_app.c</file>
+        </outputs>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

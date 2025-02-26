@@ -1,10 +1,4 @@
-# STKNX RFID for CYG Charging Station
-
-
-
-![image-20240711175747573](https://raw.githubusercontent.com/dwgan/PicGo/main/img/image-20240711175747573.png)
-
-
+# STKNX RFID for general use
 
 ## How to get ID from devices
 
@@ -204,5 +198,4 @@ void nfcTagID_process(KNX_NFCInfo *knx_msg, SCAN_NFCInfo *local_info)
 
 #### ID list
 
-Note that ID list is a *.zip file, unzip password is `the complex password`
-
+use EITT software to download data to device. Please find EITT software installer in release page.

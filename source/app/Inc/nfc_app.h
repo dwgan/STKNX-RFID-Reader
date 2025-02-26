@@ -39,7 +39,7 @@ extern "C" {
 
 #define MAX_TAGS 20  // maximum number of id
 #define MAX_ID_LEN 8  // maximum lenth of each id
-#define NFC_DURATION 6000  // nfc disable duration
+#define NFC_DURATION 3000  // nfc disable duration
 
 #define KNX_TAG_ID_ADD 1
 #define KNX_TAG_ID_RM  2

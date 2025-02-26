@@ -249,15 +249,17 @@ void nfcTagID_process(KNX_NFCInfo *knx_msg, SCAN_NFCInfo *local_info)
         {
             // if the id is recorder, disable detection function in 4s to avoid frequently turn on / off the charger
             NFC_Disable_MsRef = API_KnxTm_GetTimeMs();
-            chargerboardupdateflag.chargerstatussetting = 1; // Enable this flag to set command to charge board
-            if (chargerinformation.chargerworkingstatus == 1)
-            {
-                chargerinformation.chargersetting = 0;
-            }
-            else
-            {
-                chargerinformation.chargersetting = 1;
-            }
+            // chargerboardupdateflag.chargerstatussetting = 1; // Enable this flag to set command to charge board
+            // if (chargerinformation.chargerworkingstatus == 1)
+            // {
+            //     chargerinformation.chargersetting = 0;
+            // }
+            // else
+            // {
+            //     chargerinformation.chargersetting = 1;
+            // }
+            chargerinformation.chargersetting = chargerinformation.chargersetting ? 0 : 1;
+            chargerupdateflag.chargercontrolupdate = 1;
             memcpy((char*)&knx_msg->info, (char*)&tagArray.info[ind], sizeof(TagInfo));
         }
         else
